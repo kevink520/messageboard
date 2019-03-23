@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background: hsl(35, 51%, 95%);
+  font-family: sans-serif;
+  color: hsl(18, 78%, 18%);
+}
+
+a {
+  color: hsl(18, 78%, 18%);
+}
+
+a,
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.user-stories {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  background: rgba(255,255,255,0.95);
+  line-height: 1.5;
+}
+
+.user-stories-inner {
+  width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 90px 50px 50px;
+}
+
+.user-stories-toggle-button {
+  height: 40px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  padding: 10px 20px;
+  border: 3px solid hsl(18, 78%, 18%);
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.back-link {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.main {
+  width: 100%;
+  padding: 40px;
+}
+
+.main-board {
+  background: hsl(35, 51%, 89%);
+}
+
+h1, h3 {
+  margin-top: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .test-ui {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.33% - 20px));
+    grid-gap: 30px 30px;
+  }
+}
+
+.api-testing-link-h3 {
+  grid-column: 2 / 4;
+  margin-top: 25px;
+  text-align: right;
+}
+
+.api-testing-link {
+  color: hsl(18, 78%, 18%);
+}
+
+.card {
+  padding: 30px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 80px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: hsl(18, 78%, 18%);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.main-board input[type="submit"] {
+  margin-bottom: 10px;
+}
+
+.replies {
+  max-width: 700px;
+  padding-left: 50px;
+  margin: 0 auto;
+}
+
+.thread-main,
+#submitNewThread {
+  max-width: 700px;
+}
+
+.thread-main,
+.reply,
+.newReply,
+#submitNewThread {
+  padding: 30px;
+  border-radius: 10px;
+  margin: 0 auto 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.thread-main,
+.reply {
+  background: hsl(35, 51%, 95%);
+}
+
+.thread {
+  margin-bottom: 50px;
+}
+
+.newReply,
+#submitNewThread {
+  background: #fff;
+}
+
+.thread-text,
+.reply-text {
+  padding: 30px;
+  background: #fff;
+}
+
+.id {
+  font-size: 14px;
+}
+
+.replies h5 {
+  font-size: 14px;
+}
+
+.main-board #deleteThread,
+.main-board #deleteReply {
+  display: flex;
+}
+
+.main-board #deleteThread input[type="text"],
+.main-board #deleteReply input[type="text"] {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.main-board #deleteThread input[type="submit"],
+.main-board #deleteReply input[type="submit"] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
